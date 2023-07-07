@@ -1,70 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-  <title>Portfolio - Rafael R Rosa</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="/portfolio/assets/css/reset.css">
-  <!-- Reset -->
-  <link rel="stylesheet" type="text/css" href="/portfolio/assets/css/navegation.css">
-  <!-- Menu navegação -->
-  <link rel="stylesheet" type="text/css" href="/portfolio/assets/css/about-me.css">
-  <!-- Sobre mim-->
-</head>
-
-<body>
-
-  <header>
-    <!-- Menu navegação -->
-    <div class="menu-navegacao">
-      <h1><img src="/portfolio/assets/img/logo1.png" alt="Logo em formato de R"></h1>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dev <span>Saber</span></h1>
       <nav>
-        <ul>
-          <li><a href="">Início</a></li>
-          <li><a href="">Sobre mim</a></li>
-          <li><a href="">Projetos</a></li>
-          <li><a href="">Habilidades</a></li>
+        <ul class="navegacao-primaria">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-    </div>
-    <!-- Menu navegação -->
-  </header>
-
-  <main>
-    <!-- Primeira tela -->
-    <section>
+    </header>
+    <section aria-label="seção currículo download Rafael" class="selection-div">
       <div>
-        <p>Oi, eu sou <br>Rafael R Rosa.</br></p>
-        <p>Desenvolvedor Front-end</p>
-        <a href="https://www.linkedin.com/in/rarorza/">Linkedin</a>
+        <h2>Hi There! I'm</h2>
+        <h2 class="digitando">Back End Developer - Python</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+          earum! Quam provident doloremque consectetur esse illo fugit
+          consequuntur ut, perferendis velit non impedit veritatis dicta quidem,
+          expedita maiores minima a.
+        </p>
+        <a href="#">Download CV</a>
       </div>
-      <div>
-        <img src="/portfolio/assets/img/eu.png" alt="Eu em desenho">
-      </div>
+      <img src="./assets/img/sample.jpg" alt="Ilustrativa imagem de um homem">
     </section>
-    <!-- Primeira tela -->
-
-    <!-- Sobre mim -->
-    <section>
-      <div>
-        <img src="/portfolio/assets/img/avatar.png" alt="avatar">
-      </div>
-      <div>
-        <h2>Sobre mim</h2>
-        <p>Meu nome é Rafael R Rosa e eu sou um apaixonado por tecnologia que decidiu trilhar o caminho da programação.
-          Possuo experiência em Desenvolvimento Web. Trabalhei com projetos envolvendo gestão educacional, APIs e banco
-          de dados. Atualmente estou focando nas tecnologias voltadas ao FrontEnd.</p>
-        <p>Hoje já entendo tecnologias como ReactJS, Bootstrap, Mysql, etc.</p>
-      </div>
-    </section>
-    <!-- Sobre mim -->
-
-  </main>
-
-  <footer>
-
-  </footer>
-</body>
-
-</html>class
+    <script src="script.js"></script>
+  </body>
+</html>
