@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: #000;
+  background-color: #f8fafc;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -18,7 +18,7 @@ body {
 /* HEADER */
 
 header {
-  background-color: #000;
+  background-color: #f8fafc;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -26,12 +26,12 @@ header {
 }
 
 header h1 {
-  color: #dc3545;
+  color: #0c4a6e;
   font-size: 2.5rem;
 }
 
 header span {
-  color: #fff;
+  color: #020617;
 }
 
 header .navegacao-primaria {
@@ -42,13 +42,13 @@ header .navegacao-primaria {
 
 header .navegacao-primaria li a {
   padding: 10px;
-  color: #fff;
+  color: #020617;
   font-size: 1.3rem;
 }
 
 /* DOWNLOAD CV SEÇÃO */
 .selection-div {
-  background-color: #000;
+  background-color: #f8fafc;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-around;
@@ -68,21 +68,21 @@ header .navegacao-primaria li a {
 .selection-div div h2 {
   font-family: "Poppins";
   font-weight: 600;
-  color: #f7f7f7;
+  color: #020617;
 }
 
 .selection-div div p {
   font-family: "Poppins";
   font-weight: 300;
-  color: #f7f7f7;
+  color: #020617;
 }
 
 .selection-div div a {
   justify-self: start;
-  color: #fff;
+  color: #020617;
   padding: 15px 40px;
   border-radius: 5px;
-  border: 2px solid white;
+  border: 2px solid #020617;
 }
 
 .selection-div img {
@@ -99,8 +99,8 @@ header .navegacao-primaria li a {
 /* SEÇÃO PRINCIPAL SOBRE MIM */
 
 main {
-  background-color: #111;
-  color: white;
+  background-color: #f1f5f9;
+  color: #020617;
 }
 
 main .sobre {
@@ -116,12 +116,12 @@ main .sobre {
   margin: 30px 0;
   grid-column: 1/-1;
   text-align: center;
-  color: #fff;
+  color: #020617;
 }
 
 .sobre_titulo h1 {
   font-size: 2.5rem;
-  color: #ff5d56;
+  color: #0c4a6e;
   margin-bottom: 15px;
   font-family: "Berkshire Swash", cursive;
 }
@@ -144,11 +144,11 @@ main .sobre {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background-color: #dc3545;
+  background-color: #0c4a6e;
 }
 
 .sobre img {
-  animation: esquerdaSecao .5s ease-in-out forwards;
+  animation: esquerdaSecao 0.5s ease-in-out forwards;
   cursor: pointer;
   grid-row: 2;
   max-width: 100%;
@@ -177,12 +177,12 @@ main .sobre {
 
 .sobre_texto h1 {
   font-size: 2.3rem;
-  color: #fff;
+  color: #020617;
   grid-column: 1/-1;
 }
 
 .sobre_texto h1::after {
-  background-color: #ff5d56;
+  background-color: #0c4a6e;
   height: 6px;
   width: 60px;
   margin: 20px 0;
@@ -207,7 +207,7 @@ main .sobre {
 }
 
 .sobre_info i {
-  color: #dc3545;
+  color: #0c4a6e;
   display: inline-block;
   padding-right: 15px;
   font-size: 1.5rem;
@@ -215,6 +215,37 @@ main .sobre {
 
 .sobre_info p {
   font-size: 0.9rem;
+}
+
+/* RESPONSIVO */
+@media (max-width: 992px) {
+  .sobre img {
+    grid-column: 1/-1;
+    justify-content: center;
+  }
+
+  .sobre_conteudo {
+    grid-column: 1/-1;
+  }
+
+  .selection-div img {
+    display: none;
+  }
+
+  .selection-div {
+    background-image: url(./assets/img/sample.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  header .navegacao-primaria {
+    display: none;
+  }
+
+  header i {
+    color: #020617;
+    font-size: 2rem;
+  }
 }
 
 @keyframes pisca {
