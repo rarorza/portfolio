@@ -324,6 +324,130 @@ main .sobre {
   border-left: 2px solid #0c4a6e;
 }
 
+/* SEÇÃO RESUME -  Experience */
+.my_resume {
+  color: #020617;
+}
+
+.resume_general {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 10px;
+  align-items: start;
+}
+
+.resume_general h2 {
+  font-family: "Poppins";
+  font-weight: 1.5rem;
+  background-color: #0c4a6e;
+  color: #f1f5f9;
+  justify-self: start;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.resume_general h2 i {
+  margin-right: 10px;
+}
+
+.experience {
+  margin-bottom: 30px;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.education {
+  margin-bottom: 30px;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.experience_content ul {
+  color: #0c4a6e;
+  gap: 10px;
+  display: flex;
+  cursor: pointer;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.resume_general .experience_content div {
+  background-color: #cbd5e1;
+  padding: 40px;
+  position: relative;
+}
+
+.resume_general .experience_content div::before {
+  content: "";
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #0c4a6e;
+  position: absolute;
+  top: -20px;
+  left: 30px;
+  display: inline-block;
+}
+
+.resume_general .experience_content div span {
+  color: #0c4a6e;
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+.resume_general .experience_content div h3 {
+  font-family: "Poppins";
+  margin: 10px 0;
+}
+
+.resume_general .experience_content div p {
+  color: #707070;
+  font-size: 1.1rem;
+}
+
+/* SEÇÃO RESUME -  Education */
+
+.education_content ul {
+  color: #0c4a6e;
+  gap: 10px;
+  display: flex;
+  cursor: pointer;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.resume_general .education_content div {
+  background-color: #cbd5e1;
+  padding: 40px;
+  position: relative;
+}
+
+.resume_general .education_content div::before {
+  content: "";
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #0c4a6e;
+  position: absolute;
+  top: -20px;
+  left: 30px;
+  display: inline-block;
+}
+
+.resume_general .education_content div span {
+  color: #0c4a6e;
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+.resume_general .education_content div h3 {
+  font-family: "Poppins";
+  margin: 10px 0;
+}
+
+.resume_general .education_content div p {
+  color: #707070;
+  font-size: 1.1rem;
+}
+
 /* RESPONSIVO */
 @media (max-width: 992px) {
   .sobre img {
@@ -362,8 +486,8 @@ main .sobre {
   /* Menu hamburger */
   header .navegacao-primaria.ativado {
     background: linear-gradient(
-      rgba(12, 74, 110, 0.176),
-      rgba(7, 37, 54, 0.724)
+      rgba(223, 223, 223, 0.452),
+      rgba(232, 247, 255, 0.724)
     );
     position: absolute;
     display: grid;
