@@ -375,14 +375,20 @@ main .sobre {
 
 .resume_general .experience_content div {
   background-color: #cbd5e1;
+  animation: direitaSecao 0.5s ease-in-out forwards;
+  display: none;
   padding: 40px;
   position: relative;
+}
+
+.resume_general .experience_content div.ativo {
+  display: block;
 }
 
 .resume_general .experience_content div::before {
   content: "";
   border-right: 30px solid transparent;
-  border-bottom: 30px solid #0c4a6e;
+  border-bottom: 30px solid #cbd5e1;
   position: absolute;
   top: -20px;
   left: 30px;
@@ -405,6 +411,10 @@ main .sobre {
   font-size: 1.1rem;
 }
 
+.experience_content ul li.ativo {
+  color: #707070;
+}
+
 /* SEÇÃO RESUME -  Education */
 
 .education_content ul {
@@ -419,13 +429,15 @@ main .sobre {
 .resume_general .education_content div {
   background-color: #cbd5e1;
   padding: 40px;
+  display: none;
+  animation: esquerdaSecao 0.5s ease-in-out forwards;
   position: relative;
 }
 
 .resume_general .education_content div::before {
   content: "";
   border-right: 30px solid transparent;
-  border-bottom: 30px solid #0c4a6e;
+  border-bottom: 30px solid #cbd5e1;
   position: absolute;
   top: -20px;
   left: 30px;
@@ -448,7 +460,29 @@ main .sobre {
   font-size: 1.1rem;
 }
 
+.resume_general .education_content div.ativo {
+  display: block;
+}
+
+.education_content ul li.ativo {
+  color: #707070;
+}
+
 /* RESPONSIVO */
+@media (max-width: 1089px) {
+  .resume_general .experience_content,
+  .education_content {
+    justify-content: center;
+    grid-column: 1/-1;
+  }
+
+  .resume_general .education {
+    grid-column: 1/-1;
+    grid-row: 3;
+    margin: 30px 0;
+  }
+}
+
 @media (max-width: 992px) {
   .sobre img {
     grid-column: 1/-1;
