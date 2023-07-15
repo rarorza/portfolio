@@ -18,6 +18,13 @@ body {
 /* HEADER */
 
 header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+header {
   background-color: #f8fafc;
   padding: 10px;
   display: flex;
@@ -63,6 +70,10 @@ header .navegacao-primaria li a:hover::after {
   border-bottom: 4px solid #0c4a6e;
 }
 
+header .fa-bars {
+  display: none;
+}
+
 /* DOWNLOAD CV SEÇÃO */
 .selection-div {
   background-color: #f8fafc;
@@ -102,6 +113,23 @@ header .navegacao-primaria li a:hover::after {
   border: 2px solid #020617;
 }
 
+div .links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 40px;
+  padding: 0;
+}
+
+.selection-div a {
+  display: flex;
+  max-width: 120px;
+  justify-content: space-around;
+}
+
+.selection-div a i {
+  padding: 0 5px;
+}
+
 .selection-div img {
   max-width: 100%;
 }
@@ -116,7 +144,8 @@ header .navegacao-primaria li a:hover::after {
 /* SEÇÃO PRINCIPAL SOBRE MIM */
 
 main {
-  background-color: #f1f5f9;
+  /* background-color: #f1f5f9; */
+  background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
   color: #020617;
 }
 
@@ -166,17 +195,16 @@ main .sobre {
 
 .sobre img {
   animation: esquerdaSecao 0.5s ease-in-out forwards;
-  cursor: pointer;
   grid-row: 2;
   max-width: 100%;
   border-radius: 4px;
   filter: blur(0);
 }
 
-.sobre img:hover {
+/* .sobre img:hover {
   transition: 0.5s ease-in;
   filter: blur(1px);
-}
+} */
 
 .sobre_conteudo {
   animation: direitaSecao 0.6s ease-in-out forwards;
@@ -238,7 +266,8 @@ main .sobre {
 .services {
   margin-top: -30px;
   padding: 60px;
-  background-color: #f1f5f9;
+  /* background-color: #f1f5f9; */
+  background: linear-gradient(to top, #f8fafc, #f1f5f9);
 }
 
 .my_services {
@@ -325,7 +354,7 @@ main .sobre {
   border-left: 2px solid #0c4a6e;
 }
 
-/* SEÇÃO RESUME -  Experience */
+/* SEÇÃO RESUMO */
 .my_resume {
   color: #020617;
 }
@@ -537,7 +566,8 @@ main .sobre {
 
 /* FOOTER */
 footer {
-  background-color: #f1f5f9;
+  /* background-color: #f1f5f9; */
+  background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
   padding: 30px;
 }
 
@@ -564,13 +594,13 @@ footer {
 }
 
 .footer_sociais li:hover {
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   cursor: pointer;
   background-color: #5b6b74;
 }
 
 .footer_sociais::before {
-  content: '';
+  content: "";
   height: 5px;
   position: absolute;
   width: 200px;
@@ -583,7 +613,7 @@ footer .footer_comercial {
   color: #707070;
   margin: 90px auto;
   font-size: 1.1rem;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 /* RESPONSIVO */
@@ -619,11 +649,12 @@ footer .footer_comercial {
     background-image: url(./assets/img/sample.png);
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 200px;
   }
 
   header {
     justify-content: space-between;
-    padding: 30px 70px;
+    padding: 30px 30px;
   }
 
   header .navegacao-primaria {
@@ -652,6 +683,26 @@ footer .footer_comercial {
     border-radius: 0 0 4px 4px;
     right: 20px;
     animation: direitaSecao 0.4s ease-in-out;
+  }
+
+  header .fa-bars {
+    display: block;
+  }
+}
+
+@media (max-width: 530px) {
+  div .links {
+    grid-template-columns: 1fr;
+  }
+
+  .selection-div a {
+    display: flex;
+    max-width: 120px;
+    justify-content: space-around;
+  }
+
+  .selection-div a i {
+    padding: 0 5px;
   }
 }
 
