@@ -80,6 +80,8 @@ function gridProjects(){
     });
     buttonGeral[index].classList.add('ativo');
   }
+
+  showLista(listaAll);
   
   buttonGeral.forEach((event, index) => {
     event.addEventListener('click', () => {

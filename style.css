@@ -522,6 +522,7 @@ main .sobre {
   padding: 6px 20px;
   color: #f8fafc;
   border-radius: 3px;
+  font-size: 1.2rem;
 }
 
 .projects_models ul li.ativo {
@@ -581,6 +582,13 @@ main .sobre {
   border: 1px solid #f8fafc;
   color: #f8fafc;
   border-radius: 3px;
+}
+
+.container a {
+  margin: 0;
+  padding: 0;
+  background-color: #f8fafc;
+  color: #020617;
 }
 
 /* FOOTER */
