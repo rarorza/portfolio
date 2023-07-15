@@ -526,7 +526,6 @@ main .sobre {
 
 .projects_models ul li.ativo {
   background-color: #5b6b74;
-  font-weight: bold;
 }
 
 .projects_storage ul {
@@ -553,6 +552,25 @@ main .sobre {
   height: 100%;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.container {
+  border: solid 1px #cbd5e1;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.projects_storage ul span {
+  border: solid 1px #cbd5e1;
+  border-radius: 5px;
+  padding: 2px;
+  font-family: "Poppins";
+  cursor: pointer;
+}
+
+.projects_storage ul p {
+  padding: 10px 0;
+  font-family: "Poppins";
 }
 
 .projects a {
@@ -689,6 +707,10 @@ footer .footer_comercial {
   header .fa-bars {
     display: block;
   }
+
+  .projects_storage ul {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 530px) {
@@ -705,6 +727,18 @@ footer .footer_comercial {
   .selection-div a i {
     padding: 0 5px;
   }
+
+  .projects_models ul li {
+    font-weight: bold;
+    text-align: center;
+    /* margin: 2px 0; */
+  }
+
+  .projects_models ul{
+    max-width: 360px;
+    gap: 5px;
+  }
+
 }
 
 @keyframes pisca {
