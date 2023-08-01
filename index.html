@@ -17,8 +17,8 @@
     <h1>Rafael <span>Rosa</span></h1>
     <nav>
       <ul aria-label="Navegação primária" class="navegacao-primaria">
-        <li><a href="#home">Início</a></li>
-        <li><a href="#about">Sobre</a></li>
+        <li><a href="#initial">Início</a></li>
+        <li><a href="#about-me">Sobre</a></li>
         <li><a href="#resume">Resumo</a></li>
         <li><a href="#projects">Projetos</a></li>
         <li><a href="#contact">Contato</a></li>
@@ -26,7 +26,7 @@
       <i class="fa-solid fa-bars"></i>
     </nav>
   </header>
-  <section aria-label="Seção currículo download Rafael" class="selection-div">
+  <section aria-label="Seção currículo download Rafael" class="selection-div" id="initial">
     <div>
       <h2>Olá! Eu sou</h2>
       <h2 class="digitando">Back End Developer</h2>
@@ -41,7 +41,7 @@
     <img src="./assets/img/sample.png" alt="Ilustrativa imagem de um homem" />
   </section>
   <main>
-    <article aria-label="Seção sobre mim" class="sobre">
+    <article aria-label="Seção sobre mim" class="sobre" id="about-me">
       <div class="sobre_titulo">
         <h2>Sobre Mim</h2>
         <p>Perfil profissional</p>
@@ -99,17 +99,17 @@
           <li>
             <i class="fa-solid fa-code"></i>
             <h3>Linguagens</h3>
-            <p>Tenho domínio na linguagem Python e conhecimento intermediário em JavaScript.</p>
+            <p>Estou em constante evolução nas linguagens Python e NodeJS.</p>
           </li>
           <li>
             <i class="fa-solid fa-globe"></i>
             <h3>Frameworks</h3>
-            <p>Atualmente utilizo Django e Selenium em meus projetos.</p>
+            <p>Atualmente utilizo Flask, Django e Selenium em meus projetos.</p>
           </li>
           <li>
             <i class="fa-solid fa-layer-group"></i>
             <h3>Banco de Dados</h3>
-            <p>Para relacionais utilizo PostgreSQL e para NoSQL utilizo MongodDB.</p>
+            <p>Para SQL utilizo SQLite (local storage) e PostgreSQL (deploy storage).</p>
           </li>
           <li>
             <i class="fa-sharp fa-solid fa-pen-to-square"></i>
@@ -118,19 +118,19 @@
           </li>
           <li>
             <i class="fa-solid fa-medal"></i>
-            <h3>MVC e MVT</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, vero.</p>
+            <h3>MVC</h3>
+            <p>Conhecimento sobre o padrão de projeto mais utilizado no mercado, MVC (Model-View-Controller) e sua aplicação nos frameworks.</p>
           </li>
           <li>
             <i class="fa-sharp fa-solid fa-palette"></i>
-            <h3>AWS</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, expedita?</p>
+            <h3>Testes unitários</h3>
+            <p>Uma aplicação segura, sustentável e escalável deve contar com testes unitários, por isso utilizo a biblioteca Pytest.</p>
           </li>
         </ul>
       </div>
   </section>
   <!-- Resume -->
-  <div class="my_resume">
+  <div class="my_resume" id="resume">
     <div class="sobre_titulo">
       <h2>Resumo</h2>
       <p>Um breve resumo das minhas experiências profissionais e acadêmicas</p>
@@ -142,9 +142,9 @@
       <h2 class="experience"></i>EXPERIÊNCIA</h2>
       <div class="experience_content">
         <div>
-          <span>2017-2019</span>
-          <h3>Lorem ipsum dolor sit amet.</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <span>2021-2023</span>
+          <h3>Trader autônomo</h3>
+          <p>Atualmente trabalho no mercado Cripto/DEFI como trader autônomo.</p>
         </div>
         <div>
           <span>2019-2021</span>
@@ -189,7 +189,7 @@
       </div>
     </div>
   </div>
-  <section class="projects">
+  <section class="projects" id="projects">
     <div class="sobre_titulo">
       <h2>Projetos</h2>
       <p>Meus projetos</p>
@@ -208,20 +208,20 @@
     <div class="projects_storage">
       <ul>
         <li id="backend">
+          <div class="container">
+            <img src="./assets/img-projects/DEVChat.png" alt="Descrição">
+            <p><strong>DEV Chat</strong> - Um fórum com sistema de login, perfil de usuário e posts. Desenvolvido com Flask, SQLite e Bootstrap, utilizando o padrão MVC.</p>
+            <span><a href="#">App</a></span>
+            <span><a href="https://github.com/rarorza/DEVChat" target="_blank" rel="noreferrer">GitHub</a></span>
+          </div>
+        </li>
+        <li id="backend">
             <div class="container">
               <img src="./assets/img-projects/sample.png" alt="Descrição">
               <p>Password Vault</p>
               <span><a href="#" target="_blank" rel="noreferrer">App</a></span>
               <span><a href="https://github.com/rarorza/password_vault" target="_blank" rel="noreferrer">GitHub</a></span>
             </div>
-        </li>
-        <li id="backend">
-          <div class="container">
-            <img src="./assets/img-projects/sample.png" alt="Descrição">
-            <p>Coming Soon</p>
-            <span><a href="#">App</a></span>
-            <span><a href="#">GitHub</a></span>
-          </div>
         </li>
         <li id="backend">
           <div class="container">
