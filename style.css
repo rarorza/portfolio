@@ -9,6 +9,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f8fafc;
   max-width: 1200px;
@@ -742,11 +746,10 @@ footer .footer_comercial {
     /* margin: 2px 0; */
   }
 
-  .projects_models ul{
+  .projects_models ul {
     max-width: 360px;
     gap: 5px;
   }
-
 }
 
 @keyframes pisca {
